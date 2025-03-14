@@ -10,12 +10,12 @@ const AddCity = ({ setCities }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newCity = {
-      id: Date.now(), // We used Date.now() to generate a unique ID
+      id: Date.now(), // We have used Date.now() to generate a unique ID
       name,
       country,
-      population: parseInt(population), // This converts population to a number
+      population: parseInt(population), // This will convert population to a number
     };
-    setCities((prevCities) => [...prevCities, newCity]); // Update the cities state
+    setCities((prevCities) => [...prevCities, newCity]); // Updating the cities state
     navigate("/"); // Redirect to Cities List
   };
 
