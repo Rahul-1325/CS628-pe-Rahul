@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import CitiesList from "./CitiesList";
 import AddCity from "./AddCity";
 import CitiesDetails from "./CitiesDetails";
-import { citiesData } from "./data"; // Import your initial city data
+import { citiesData } from "./data"; // Import initial city data
 import "./App.css";
 
 const App = () => {
-  const [cities, setCities] = useState(citiesData); // Initialize with data from citiesData
+  const [cities, setCities] = useState(citiesData); // Initialize data from citiesData
 
   return (
     <Router>
